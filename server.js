@@ -23,7 +23,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', (req,res) => {
-    res.sendFile('/index.ejs')
+    res.sendFile('/views/index.ejs')
 })
 
 app.listen(process.env.PORT || PORT, () => {
